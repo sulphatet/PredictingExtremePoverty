@@ -1,0 +1,27 @@
+
+body > h2{
+    text-align : center;
+    font-family:sans-serif;
+    background-color:#7952b3;
+    color:#ebe5f4;
+    font-size: 300%;
+}
+
+body > h4{
+    margin:10px;
+}
+
+
+.sourceFiles{
+    float: right;
+    margin:0px 25px;
+    border :3px solid black;
+}
+
+.aboutMe{
+    margin: 0px 25px;
+}
+
+.buttons{
+    margin: 0px 15px;
+}
