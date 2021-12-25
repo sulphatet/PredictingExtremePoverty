@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Project</title>
+        <script> 
+
+        function changeToBrazil()
+        {
+        var img1 = document.getElementById("ImgA");
+        img1.src="/findings/BrazilA.png";
+        var img2 = document.getElementById("ImgB");
+        img2.src="/findings/BrazilB.png";
+        return false;
+        }
+        
+        function changeToIndia()
+        {
+        var img1 = document.getElementById("ImgA");
+        img1.src="/findings/IndiaA.png";
+        var img2 = document.getElementById("ImgB");
+        img2.src="/findings/IndiaB.png";
+        return false;
+        }
+        
+        function changeToJapan()
+        {
+        var img1 = document.getElementById("ImgA");
+        img1.src="/findings/JapanA.png";
+        var img2 = document.getElementById("ImgB");
+        img2.src="/findings/JapanB.png";
+        return false;
+        }
+        
+        function changeToUSA()
+        {
+        var img1 = document.getElementById("ImgA");
+        img1.src="/findings/USAA.png";
+        var img2 = document.getElementById("ImgB");
+        img2.src="/findings/USAB.png";
+        return false;
+        }
+        
+        function changeToWorld()
+        {
+        var img1 = document.getElementById("ImgA");
+        img1.src="/findings/WorldA.png";
+        var img2 = document.getElementById("ImgB");
+        img2.src="/findings/WorldB.png";
+        return false;
+        }
+        
+        </script>
+    
+    </head>
+    <body>
+
+        <h2>Estimating Homelessness</h2>
+     <h4>Data-set used is from <a href="https://ourworldindata.org/grapher/total-population-in-extreme-poverty" class="alert-link">here.</a></h4>
+     <h4><a href = "total-population-in-extreme-poverty.csv" class = "alert-link"> Download the dataset here</a></h4>
+     <div class = "sourceFiles">
+     <h6><a href = "sourceFiles/Brazil.csv" class = "alert-link"> Brazil data-set</a></h6>
+     <h6><a href = "sourceFiles/India.csv" class = "alert-link"> India data-set</a></h6>
+     <h6><a href = "sourceFiles/Japan.csv" class = "alert-link"> Japan data-set</a></h6>
+     <h6><a href = "sourceFiles/USA.csv" class = "alert-link"> USA data-set</a></h6>
+     <h6><a href = "sourceFiles/World.csv" class = "alert-link"> World data-set</a></h6>
+     </div>
+     <br><br>
+     <div class = "buttons">
+     <button type="button" class="btn btn-primary" onclick = "changeToBrazil();">Brazil</button>
+     <button type="button" class="btn btn-secondary" onclick = "changeToIndia();">India</button>
+     <button type="button" class="btn btn-success" onclick = "changeToJapan();">Japan</button>
+     <button type="button" class="btn btn-danger" onclick = "changeToUSA();">USA</button>
+     <button type="button" class="btn btn-warning" onclick = "changeToWorld();">World</button>
+     
+     <br>
+     <img id="ImgA" src="/findings/BrazilA.png" />
+     <img id="ImgB" src="/findings/BrazilB.png" />
+     <br><br>
+     <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Check the goodness of fit.
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Goodness of fit, or the R squared value shows the degree to which the polynomial fit coresponds to the actual plots.
+        <br>
+        For this project, the goodness of fit for:<br>
+        Brazil : 0.8547360275026763 <br>
+        India : 0.9861537727432116 <br>
+        Japan : 0.4880933829352849 <br>
+        USA : 0.9464210431927702 <br>
+        World : 0.9880902214619804 
+        </div>
+      </div>
+    </div>
+     <div class = "aboutMe">
+     About me: My <a href = "https://github.com/sulphatet" class = "alert-link">Github</a><br>
+     Download the source code <a href = "/sourceFiles/sourceCode.py" class = "alert-link">here</a><br>
+     Final project for CS50x <br> by Syed Affan Daimi, India.
+     </div>
+    </body>
+</html>
